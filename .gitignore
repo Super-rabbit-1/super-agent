@@ -1,0 +1,45 @@
+/*
+
+# 只追踪定义 Agent 行为的文件；运行时数据默认全部忽略。
+!/.gitignore
+!/AGENTS.md
+!/.skill-lock.json
+!/README.md
+!/bootstrap.sh
+!/sync.sh
+
+!/manifest/
+!/manifest/**
+!/rules/
+!/rules/**
+!/agents/
+!/agents/**
+!/scripts/
+!/scripts/**
+
+# 第三方 Skill 是可重装依赖，不复制进个人配置仓库。
+!/skills/
+/skills/*
+!/skills/browser-control/
+!/skills/browser-control/**
+!/skills/browser-use/
+!/skills/browser-use/**
+!/skills/eat/
+!/skills/eat/**
+!/skills/playwright-cli/
+!/skills/playwright-cli/**
+!/skills/self-media-vault/
+!/skills/self-media-vault/**
+
+**/.DS_Store
+**/.env
+**/.env.*
+**/*credential*
+**/*credentials*
+**/*secret*
+**/*token*
+**/*.pem
+**/*.key
+
+# 安全检查脚本本身不是凭据。
+!/scripts/check-secrets.sh

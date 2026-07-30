@@ -1,0 +1,4 @@
+interface:
+  display_name: "Eat 知识消化"
+  short_description: "分析外部知识并提议最小、可维护、可验证的能力沉淀方案"
+  default_prompt: "使用 $eat 分析我提供的输入，先给出最小、可维护、可验证的消化方案；未经确认不要修改任何文件。"
